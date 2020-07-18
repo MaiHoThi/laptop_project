@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+   
+  /*==Style cơ bản cho website==*/
+  body {
+    font-family: sans-serif;
+  }
+  /* AddProduct */
+  .Addproduct button{
+    padding: 5px;
+    border-radius: 10px ;
+  }
+  .Addproduct button:hover{
+    background-color: orange;
+    opacity: 1px ;
+  }
+
+  .Addproduct textarea {
+    margin-top: 10px;
+  }
+  .Addproduct input{
+    margin-top: 10px ;
+  }
+  .Addproduct input,select{
+  padding: 10px;
+
+  }
+  .Addproduct input, textarea{
+    width: 100%;
+
+  }
+  .Addproduct select{
+    width: 50%;
+  }
+  /* Login */
+  .Login {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .Login input[type=email], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .Login input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .Login .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .Login .btn:hover {
+    opacity: 1;
+  }
+  /* Header */
+  #menu{
+    width: 100%;
+  }
+  #menu a{
+    font-weight: bolder;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace ;
+
+  }
+  #menu  li{
+    display: inline-block;
+    padding: 10px;
+
+  }
+  #menu  li a{
+   text-decoration: none;
+   color: black;
+    
+  }
+  #menu input[type=text]{
+    width: 700px;
+    padding: 10px;
+   
+  }
+  #menu .icon{
+    font-size: 30px;
+  }
+  /* Body1 */
+  .App .bd1{
+    height: 20%;
+    position: relative;
+  }
+  .bd1 .slide img{
+    height: 100%;
+    width: 100%;
+  }
+  .bd1 #categories{
+    position: absolute;
+    border: 1px solid red;
+    top: 70px;
+    left: 15px;
+    width: 20%;
+    height: 60%;
+  }
+  /* Body 2 */
+  .App .bd2{
+    margin-top: 10px;
+    background-color: pink;
+    width: 80%;
+    height: 100%;
+    border: 1px solid;
+    margin:auto;
+    background-image: url("/image/backgr.jpg");
+  }
+  /* products */
+  .bd2 .products{
+    margin-top: 20px;
+    border: 1px solid;
+    margin-left: 10px;
+    background-color: snow;
+    border-radius: 30px;
+
+  }
+  #body-product #oldPrice{
+    text-decoration: line-through;
+  }
+  #body-product #price{
+color: red;
+  }
+  .bd2 .products img{
+    width: 100%;
+    height: 300px;
+  }
+  #body-product span {
+    margin-left: 10px;
+  }
+.button button{
+   padding: 10px;
+   margin-left: 10px;
+   border-radius:12px;
+  }
+
+  .button button:hover{
+background-color: rgb(12, 248, 91);
+  }
