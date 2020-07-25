@@ -1,6 +1,9 @@
 .App {
   text-align: center;
-  position: relative;
+  
+  /* background-image: url("/image/backgr.jpg"); */
+  background: url("/image/banner.jpg");
+
 }
 
 .App-logo {

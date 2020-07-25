@@ -2,76 +2,90 @@
     margin: 0;
     padding: 0;
   }
-   
-  /*==Style cơ bản cho website==*/
-  body {
-    font-family: sans-serif;
-  }
-  /* AddProduct */
-  .Addproduct button{
-    padding: 5px;
-    border-radius: 10px ;
-  }
-  .Addproduct button:hover{
-    background-color: orange;
-    opacity: 1px ;
-  }
 
-  .Addproduct textarea {
-    margin-top: 10px;
-  }
-  .Addproduct input{
-    margin-top: 10px ;
-  }
-  .Addproduct input,select{
-  padding: 10px;
 
-  }
-  .Addproduct input, textarea{
-    width: 100%;
-
-  }
-  .Addproduct select{
-    width: 50%;
-  }
   /* Login */
+
+  #login h1{
+    font-family: 'Sirin Stencil', cursive;
+color: snow;
+  }
   .Login {
-    position: absolute;
-    right: 0;
-    margin: 20px;
-    max-width: 300px;
+    margin-top: 20px;
+    margin-left: 30%;
+    max-width: 600px;
+  height: 600px;
     padding: 16px;
-    background-color: white;
+    background: rgba(4, 4, 4, 0.56);
+    border: 1px solid;
+    margin-bottom: 200px;
   }
-  
-  /* Full-width input fields */
-  .Login input[type=email], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
+ 
+  .Login input[type=email], input[type=password] , input[type=text] {
+   outline: none;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 15px 40px 15px 10px;
+    letter-spacing: 2px;
+    width: 87%;
     border: none;
-    background: #f1f1f1;
+    border: 1px solid #DCCBCF;
+    -webkit-appearance: none;
+    margin-top: 25px;
+
+    background: transparent;
+	font-family: 'Sirin Stencil', cursive;
   }
   
-  .Login input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
+ 
   
-  /* Set a style for the submit button */
-  .Login .btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
   
-  .Login .btn:hover {
-    opacity: 1;
-  }
+  .p-bottom-w3ls {
+    font-size: 16px;
+    color: #eee;
+    margin-top: 5em;
+    text-align: center;
+	  text-transform: none;
+	  float:left;
+    }
+.p-bottom-w3ls1 {
+    font-size: 16px;
+    color: #eee;
+    margin-top: 6em;
+    text-align: center;
+	text-transform: none;
+	float:right;
+}
+.p-bottom-w3ls a,.p-bottom-w3ls1 a{
+    color: #8BC34A;
+	outline:none;
+	text-decoration:none;
+}
+.Login button{
+  margin-top: 20px;
+  padding: 10px;
+}
+/* Register */
+.hiddenFileInput > input{
+  height: 100%;
+  width: 100;
+  opacity: 0;
+  /* cursor: pointer; */
+}
+.hiddenFileInput{
+  border: 1px solid #ccc;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  /* overflow: hidden; */
+  cursor: pointer;
+  
+  /*for the background, optional*/
+  background: center center no-repeat;
+  border-radius: 50%;
+  background-image:  url(http://www.gstatic.com/images/icons/material/system/2x/photo_camera_grey600_24dp.png);
+
+}
   /* Header */
   #menu{
     width: 100%;
@@ -100,8 +114,9 @@
   #menu .icon{
     font-size: 30px;
   }
+
   /* Body1 */
-  .App .bd1{
+.bd1{
     height: 20%;
     position: relative;
   }
@@ -117,44 +132,121 @@
     width: 20%;
     height: 60%;
   }
+
+  #categories{
+    background-color: snow;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  }
+
+  #categories li{
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  #categories .cate{
+    text-align: center;
+    font-size: large;
+  }
+  .log{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+   
+  }
+
   /* Body 2 */
-  .App .bd2{
+ .bd2 .row{
     margin-top: 10px;
-    background-color: pink;
+    background-color: snow;
     width: 80%;
     height: 100%;
-    border: 1px solid;
     margin:auto;
-    background-image: url("/image/backgr.jpg");
+    padding: 5px;
   }
-  /* products */
-  .bd2 .products{
-    margin-top: 20px;
-    border: 1px solid;
-    margin-left: 10px;
-    background-color: snow;
-    border-radius: 30px;
 
-  }
-  #body-product #oldPrice{
-    text-decoration: line-through;
-  }
-  #body-product #price{
-color: red;
-  }
-  .bd2 .products img{
+   /* products */
+   #product {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.product_block {
+    border: 1px solid #eeeeee;
+    height: 100%;
+}
+
+.product_image img {
     width: 100%;
-    height: 300px;
-  }
-  #body-product span {
-    margin-left: 10px;
-  }
-.button button{
-   padding: 10px;
-   margin-left: 10px;
-   border-radius:12px;
-  }
+    height: 200px;
+}
+.product_price #oldPrice{
+  text-decoration: line-through;
+}
+.product_price #price{
+color: red;
+}
+.product_add-t-cart button:hover {
+    background-color: brown;
+}
 
-  .button button:hover{
-background-color: rgb(12, 248, 91);
-  }
+.checked {
+    color: orange;
+}
+.button button{
+  padding: 10px;
+  margin-left: 10px;
+  border-radius:12px;
+  margin-bottom: 5px;
+ }
+
+ .button button:hover{
+background-color: thistle; 
+}
+/* Footer */
+.Footer {
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+.Footer ul{
+  list-style-type: none;
+  margin: auto;
+}
+.Footer li,h3{
+  text-align: left;
+  padding-left: 10px;
+  color: black;
+}
+/* Detail */
+ #body{
+padding-top: 200px;
+}
+#status{
+  color: red;
+}
+/* Cart */
+#cart .row{
+  width: 80%;
+  margin:auto;
+}
+.cart {
+  margin-top: 10px;
+  background-color: snow;
+  width: 60%;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+.payment{
+  width: 300px;
+  margin-left: 30px ;
+  background-color: snow;
+  position: fixed;
+  right: 20%;
+}
